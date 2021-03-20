@@ -1,0 +1,43 @@
+##OpenGL GLIB
+
+Perspective 90
+LookAt 0 0 2  0 0 0  0 1 0
+
+Vertex   Mcat.vert
+Fragment Mcat.frag
+Texture2D 6 cat.bmp
+Program  uTexUnit 6
+Color 1.  1.  1.
+Obj catM.obj
+
+Vertex   cat.vert
+Fragment cat.frag
+Program  Cat
+Translate 0. 0. 2.
+Color 1.  1.  1.
+Obj catH.obj
+
+Vertex   Lcat.vert
+Fragment Lcat.frag
+Program  Lcat
+Translate 0. 0. 2.
+Color 1.  1.  1.
+Obj catL.obj
+
+Vertex   Lcat.vert
+Fragment Lcat.frag
+Program  Lcat
+Translate 0. 0. -2.
+Color 1.  1.  1.
+Obj catM.obj
+
+Vertex   Eye.vert
+Fragment Eye.frag
+Program  Eye
+Translate -1.9. 3.2 -1.8.
+Rotate 90. 0. 1. 0.
+Color 1.  1.  1.
+Sphere 0.1 200 200
+Translate 0.4 0. 0.
+Color 1.  1.  1.
+Sphere 0.1 200 200
